@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vefapp</title>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/handlebars-v4.0.5.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="container">
+    <div id="mainHead">
+        <h2>Currency Converter</h2>
+    </div>
+    <div id="handleContainerWrapper">
+        <div id="handleContainer">
+            <script id="itemTemplate" type="text/x-handlebars-template">
+                {{#each results}}
+                <div class="itemTemplateWrapper">
+                    <ul>
+                        <li><h5>Stytting: {{shortName}}</h5></li>
+                        <li><h5>Nafn: {{longName}}</h5></li>
+                        <li><h5>Verð: {{value}}</h5></li>
+                        <li><h5>Asking: {{askValue}}</h5></li>
+                        <li><h5>Bid: {{bidValue}}</h5></li>
+                        <li><h5>changeCur: {{changeCur}}</h5></li>
+                        <li><h5>changePer: {{changePer}}</h5></li>
+                    </ul>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    <div id="mainFooter">
+        Footer text
+    </div>
+</div>
+</body>
+</html>

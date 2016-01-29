@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handlebars</title>
+        <link rel="stylesheet" href="style.css">
+        <!--Það þarf að sækja og laga vísun á jquery og handlebars -->
+        <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
+    </head>
+    <body>
+
+        <h1>Conditionals and Loops in Templates with Handlebars JS</h1>
+        <h3>Handlebars has support for basic logic built in.</h3>
+
+        <!-- This is the container where the templates will be instantiated -->
+        <div id="container">
+            <script id="itemTemplate" type="text/x-handlebars-template">
+                {{#each employees}}
+                    <div class="itemTemplateWrapper">
+                        <ul>
+                            <li><h4>{{name}}</h4></li>
+                            <li><h4>{{title}}</h4></li>
+                            <li><h4>{{email}}</h4></li>
+                            <li><h4>{{phone}}</h4></li>
+                            {{#if fulltime}}
+                                <li><h4>Full-time employee</h4></li>
+                            {{else}}
+                                <li><h4>Part-time employee</h4></li>
+                            {{/if}}
+                        </ul>
+                    </div>
+                {{/each}}
+            </script>
+        </div>
+    </body>
+</html>

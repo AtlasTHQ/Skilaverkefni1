@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 18pt;
+}
+
+.itemTemplateWrapper {
+    border: 1px solid gray;
+    padding: 5pt;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 400px;
+    display: block;
+    float: left;
+}
+#mainHead {
+    position: fixed;
+    min-height: 10%;
+    min-width: 100%;
+    background-color: #dddddd;
+}
+#mainFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #dddddd;
+}
+#handleContainerWrapper {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
